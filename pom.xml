@@ -8,6 +8,11 @@
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
 
+	<properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -26,6 +31,8 @@
 		    <artifactId>itext</artifactId>
 		    <version>2.1.7</version>
 		</dependency>
+
+
 	</dependencies>
 	
 </project>
