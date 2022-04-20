@@ -2,14 +2,6 @@ image: python:3.8
 pipelines:
   default:
     - step:
-          image:  python:3.8
           name: creatig a file
           script:
-            - echo $file > b.txt
-          artifacts:
-            - "b.txt"
-    - step:
-          image: python:3.8
-          name: reading a file
-          script:
-            - cat b.txt
+            - echo $file 
