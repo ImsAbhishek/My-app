@@ -13,6 +13,7 @@ then
  ${GIT} checkout -b $branch
 else
     echo "branch exist"
+   ${GIT} pull https://ImsAbhishek:${key}@github.com/ImsAbhishek/My-app.git
    ${GIT} checkout $branch
 fi
 ${GIT} add --all .
