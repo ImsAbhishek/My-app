@@ -1,5 +1,7 @@
 #!/bin/sh
 branch=qq
+key=$1
+bn=$2
 GIT=`which git`
 # REPO_DIR=/
 # cd ${REPO_DIR}
@@ -14,5 +16,5 @@ else
    ${GIT} checkout $branch
 fi
 ${GIT} add --all .
-${GIT} commit -m "Test commit"
+${GIT} commit -m "Test commit${bn}"
 ${GIT} push https://ImsAbhishek:${key}@github.com/ImsAbhishek/My-app.git $branch
