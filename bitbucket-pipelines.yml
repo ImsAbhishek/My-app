@@ -1,7 +1,7 @@
-image: python:3.8
+image: atlassian/default-image:3
 pipelines:
   default:
     - step:
-          name: creatig a file
+          name: push
           script:
-            - echo $file 
+            - bash script.sh $key $BITBUCKET_BUILD_NUMBER
