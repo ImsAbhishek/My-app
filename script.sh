@@ -1,5 +1,5 @@
 #!/bin/sh
-branch=qq
+branch=qq1
 key=$1
 bn=$2
 GIT=`which git`
