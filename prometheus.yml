@@ -20,6 +20,3 @@ scrape_configs:
         - name: tag:aws:autoscaling:groupName
           values:
           - EC2ContainerService-Prometheus-poc-EcsInstanceAsg-1MQBS8VWA8JQ5
-relabel_configs:
-  - source_labels: [__meta_ec2_instance_id]
-    target_label: instance_id
